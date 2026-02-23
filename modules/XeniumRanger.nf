@@ -24,7 +24,7 @@ process prepareInput {
 }
 
 process runXeniumRanger {
-    container 'docker://khersameesh24/xeniumranger:3.1.1'
+    container 'docker://unlhcc/xeniumranger:4.0.0'
     cpus 16
     memory { 40.GB * task.attempt }
     time { 4.hour * task.attempt }
